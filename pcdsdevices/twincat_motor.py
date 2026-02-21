@@ -79,7 +79,7 @@ class TwinCATMotorInterface(FltMvInterface, PVPositioner):
     negative_dir_enabled = Cpt(PytmcSignal, "bNegativeMotionIsEnabled", io="i", kind="normal", auto_monitor=True)
     positive_dir_enabled = Cpt(PytmcSignal, "bPositiveMotionIsEnabled", io="i", kind="normal", auto_monitor=True)
     command = Cpt(PytmcSignal, "eCommand", io="i", kind="normal", auto_monitor=True)
-    motor_egu = Cpt(EpicsSignal, "EGU", kind="normal", auto_monitor=True)
+    motor_egu = Cpt(EpicsSignalRO, "EGU", kind="normal", auto_monitor=True)
 
     # Limits (configuration)
     low_limit_travel = Cpt(EpicsSignal, 'NC:MinPos:Val_RBV', write_pv='NC:MinPos:Goal', kind='config', auto_monitor=True)
