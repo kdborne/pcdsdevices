@@ -5,7 +5,7 @@ from typing import Callable, ClassVar, Optional
 from ophyd.device import Component as Cpt
 from ophyd.device import required_for_connection
 from ophyd.pv_positioner import PVPositioner
-from ophyd.signal import EpicsSignal
+from ophyd.signal import EpicsSignal, EpicsSignalRO
 from ophyd.status import MoveStatus
 from ophyd.status import wait as status_wait
 from ophyd.utils.epics_pvs import (AlarmSeverity, fmt_time,
