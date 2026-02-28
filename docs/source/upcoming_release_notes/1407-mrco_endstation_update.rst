@@ -11,7 +11,7 @@ Library Features
 
 Device Features
 ---------------
-Added the virtual motors for rotation axes of the mrco sample paddle
+- Added the virtual motors for rotation axes of the mrco sample paddle
 
 New Devices
 -----------
@@ -27,5 +27,5 @@ Maintenance
 
 Contributors
 ------------
+- kdborne
 
-@kdborne
